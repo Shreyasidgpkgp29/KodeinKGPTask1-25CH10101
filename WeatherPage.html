@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherPage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar" class="navbar">
+        <div id="nav_bar1" class="nav_bar1">
+            <div id="nav_search" class="nav_boxes"><a class="nav_links" href="#searchbar">Search</a></div>
+            <div id="nav_weatherdetails" class="nav_boxes"><a class="nav_links" href="#wdet">Weather Details</a></div>
+            <div id="nav_about" class="nav_boxes"><a class="nav_links" href="#about">About</a></div>
+            <div id="nav_footer" class="nav_boxes"><a class="nav_links" href="#footer">Footer</a></div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i style="color:white" class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id=main><div id="searchbar" class="searchbar">
+        <h1 style="text-align: center;margin-top:10px; font-size:28px;"> Search the city and get its weather details.</h1><br>
+        <div id="searchbar_bar" class="searchbar_bar">
+            <input placeholder="Enter a city name (e.g London, Mumbai..)" id="search_bar">
+            <div id="search_tool" class="search_tool"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>    
+    </div>
+    <div id="wdet" class="wdet">
+        <h1 style="text-align: center; margin-top:30px; font-size:35px;">Weather Details</h1>
+        <div id="validwdet" class="validwdet">
+            <ul>
+                <div id="wdet1"></div>
+                <div id="wdet2"></div>
+                <div id="wdetcurr>">
+                    <div id="wdet3"></div>
+                    <div id="wimg"></div>
+                </div>
+                <div id="wdet4"></div>
+                <div id="wdet5"></div>
+                <div id="wdet6"></div>
+            </ul> 
+        </div>
+        <div id="invalidwdet" class="invalidwdet"></div>
+    </div>
+    <div id="about" class="about">
+        <h1 style="text-align: center;margin-top:10px;;font-size:34px;">About WeatherPage</h1> 
+        <p><i>We believe everyone deserves clear, accurate forecasts to make informed decisions, whether you're planning a commute, a weekend trip, or an outdoor event. Our website WeatherPage provides fast, reliable, and hyper-local weather information to help you plan your day, week, and life with confidence. Besides providing you with temperature, we also provide real-time updates on atmospheric pressure, humidity, wind-speed, and more. It will also provide you with immediate notifications for critical weather events in your area (e.g., severe storms, heavy snow, or high wind warnings) which will help you to take proper precautions and necessary measures.</i></p>
+    </div>
+    </div>  
+    <footer>
+        <div id="footer" class="footer">
+            <div id="footer1" class="footer1">
+                <p><a target="blank" href="#">Github Link</a> &nbsp&nbsp&nbsp <a target="blank" href="#">LinkedIn Link</a></p>
+                <p>Terms and Conditions. &nbsp&nbsp&nbsp Privacy Policy. &nbsp&nbsp&nbsp Copyright <i class="fa-solid fa-copyright" style="color:aliceblue;"></i></p>
+            </div>
+            <div id="footer2" class="footer2">
+                <button id="scrollToTopBtn" onclick="topFunction()">Top</button>
+            </div>
+            
+        </div>
+       
+    </footer>
+    
+    <script src="First.js"></script>
+</body>
+</html>
